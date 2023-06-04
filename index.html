@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>POS System-Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/images/logo.jpg" alt="Logo" width="90" height="70" class="d-inline-block align-text-top">
+            </a>
+            <span class="navbar-text fw-bold fs-2 ">Tharuka POS System   </span>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item " id="btnCUS">
+                        <a class="nav-link active" aria-current="page" href="#">Customer</a>
+                    </li>
+                    <li class="nav-item" id="btnIT">
+                        <a class="nav-link active" href="#">Items</a>
+                    </li>
+                    <li class="nav-item" id="btnOR">
+                        <a class="nav-link active" href="#">Orders</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div>
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Sign up</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Log out</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<section id="homePG" class="container-fluid">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/images/homeLogo.png" class="d-block w-100">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/CustomerPage.png" class="d-block w-100" >
+            </div>
+            <div class="carousel-item">
+                <img src="assets/images/ItemPage.png" class="d-block w-100">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+
+
+</section>
+<!--========customer==============-->
+<section id="customerPG" class="container-fluid">
+    <div class="alert alert-success" role="alert">
+        <img src="assets/images/cus-logo.png" alt="customer logo"><font class="fw-bold fs-4">Customer</font>
+    </div>
+    <div class="container-fluid row">
+        <div class="col">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputCustomerId" class="form-label">Customer Id</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerId">
+                    <!--  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+
+                    <label for="exampleInputCustomerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerName">
+
+                    <label for="exampleInputCustomerAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerAddress">
+
+                    <label for="exampleInputCustomerSalary" class="form-label">Customer Salary</label>
+                    <input type="text" class="form-control" id="exampleInputCustomerSalary">
+                    <div class="mt-5">
+                        <button type="button" class="  btn btn-success">Save</button>
+                        <button type="button" class=" btn btn-danger">Delete</button>
+                        <button type="button" class=" btn btn-warning">Update</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <button class="btn btn-primary" type="button">new customer</button>
+                <button class="btn btn-primary" type="button">view all customers</button>
+                <br><br>
+                <img src="assets/images/Customer.jpg" alt="customer_image" height="250" width="400">
+            </div>
+
+        </div>
+        <div>
+            <table class="table" >
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Order_Id</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Cus_Id</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Unit_Price</th>
+                    <th scope="col">Qty_on_Hand</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+</section>
+
+<!--======item============-->
+<section id="itemPG" class="container-fluid">
+    <div class="alert alert-success" role="alert">
+        <img src="assets/images/cus-logo.png" alt="customer logo"><font class="fw-bold fs-4">Item</font>
+    </div>
+    <div class="container-fluid row">
+        <div class="col">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputCustomerId" class="form-label">Customer Id</label>
+                    <input type="text" class="form-control" id="exampleInputItemId">
+                    <!--  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+
+                    <label for="exampleInputCustomerName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="exampleInputItemName">
+
+                    <label for="exampleInputCustomerAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="exampleInputItemAddress">
+
+                    <label for="exampleInputCustomerSalary" class="form-label">Customer Salary</label>
+                    <input type="text" class="form-control" id="exampleInputItemSalary">
+                    <div class="mt-5">
+                        <button type="button" class="  btn btn-success">Save</button>
+                        <button type="button" class=" btn btn-danger">Delete</button>
+                        <button type="button" class=" btn btn-warning">Update</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+        <div class="col">
+            <div class="d-grid gap-2 col-6 mx-auto mt-3">
+                <button class="btn btn-primary" type="button">new customer</button>
+                <button class="btn btn-primary" type="button">view all customers</button>
+                <br><br>
+                <img src="assets/images/Customer.jpg" alt="customer_image" height="250" width="400">
+            </div>
+
+        </div>
+    </div>
+    <div>
+        <table class="table">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Order_Id</th>
+                <th scope="col">Date</th>
+                <th scope="col">Cus_Id</th>
+                <th scope="col">Item</th>
+                <th scope="col">Unit_Price</th>
+                <th scope="col">Qty_on_Hand</th>
+                <th scope="col">Amount</th>
+                <th scope="col">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</section>
+
+<!--==========order=============-->
+<section id="orderPG" class="container-fluid">
+    <div class="alert alert-success" role="alert">
+        <img src="assets/images/order_logo.png" alt="order logo"><font class="fw-bold fs-4">Order</font>
+    </div>
+    <div class="container-fluid row"> Home>Order
+        <hr>
+        <div class="col container-fluid bg-light  border border-success border-2 m-3">
+
+            <div>
+                <div class="alert alert-success " role="alert">
+                    Order Detail
+                </div>
+                <form class="m-4">
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Order Id</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>P001</option>
+                                <option value="1">P002</option>
+                                <option value="2">P003</option>
+                                <option value="3">P004</option>
+                            </select>
+                            <label class="form-label">Date</label>
+                            <input type="text" class="form-control" id="date">
+                        </div>
+                        <div class="col mt-4">
+                            <button type="button" class="btn btn-info">New Order</button>
+                        </div>
+
+                    </div>
+                    <div >
+                        <label class="form-label">Customer Id</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>C001</option>
+                            <option value="1">C002</option>
+                            <option value="2">C003</option>
+                            <option value="3">C004</option>
+                        </select>
+
+                        <label class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" id="cus_Tel">
+
+                        <label class="form-label">Credit Limit</label>
+                        <input type="text" class="form-control" id="cus_creit_limit">
+
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="col container-fluid bg-light border border-success border-2 m-3">
+            <div class="alert alert-success " role="alert">
+                Item Detail
+            </div>
+            <form class="m-4">
+                <div class="row">
+                    <div class="col">
+                        <label class="form-label">Item</label>
+                        <select class="form-select" aria-label="Default select example">
+                            <option selected>Biscuit</option>
+                            <option value="1">Soap</option>
+                            <option value="2">Rice</option>
+                            <option value="3">Flour</option>
+                        </select>
+                    </div>
+                </div>
+                <div >
+                    <label class="form-label"> Unit_Price</label>
+                    <input type="text" class="form-control" id="unit_Price">
+
+                    <label class="form-label">Qty_On_Hand</label>
+                    <input type="text" class="form-control" id="qty_on_Hand">
+
+                    <label class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="amount">
+
+                </div>
+                <div class="col m-2">
+                    <button type="button" class="btn btn-danger">Place_Order</button>
+                </div>
+
+            </form>
+        </div>
+        <div class="col container-fluid bg-light border border-success border-2 m-3">
+
+            <div class="fs-2 fw-bold mt-5 m-2">
+                Total : 0 LKR
+                <div class="row mt-4">
+                    <div class="col">
+                        <label class="form-label">Cash</label>
+                        <input type="text" class="form-control" id="cash">
+                    </div>
+                    <div class="col">
+                        <label class="form-label">Discount</label>
+                        <input type="text" class="form-control" id="discount">
+                    </div>
+
+                    <label class="form-label">Balance</label>
+                    <input type="text" class="form-control" id="balance">
+
+                    <div class="col m-2">
+                        <button type="button" class="btn btn-primary">Purchase</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <div>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Order_Id</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Cus_Id</th>
+                    <th scope="col">Item</th>
+                    <th scope="col">Unit_Price</th>
+                    <th scope="col">Qty_on_Hand</th>
+                    <th scope="col">Amount</th>
+                    <th scope="col">Total</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+
+        </div>
+</section>
+
+<script>
+    document.getElementById("customerPG").style.display = "none";
+    document.getElementById("itemPG").style.display = "none";
+    document.getElementById("orderPG").style.display = "none";
+
+    document.getElementById("btnCUS").addEventListener("click",function (){
+        document.getElementById("homePG").style.display = "none";
+        document.getElementById("itemPG").style.display = "none";
+        document.getElementById("orderPG").style.display = "none";
+
+        document.getElementById("customerPG").style.display = "block";
+    });
+
+    document.getElementById("btnIT").addEventListener("click",function (){
+        document.getElementById("homePG").style.display = "none";
+        document.getElementById("customerPG").style.display = "none";
+        document.getElementById("orderPG").style.display = "none";
+
+        document.getElementById("itemPG").style.display = "block";
+    });
+
+    document.getElementById("btnOR").addEventListener("click",function (){
+        document.getElementById("homePG").style.display = "none";
+        document.getElementById("customerPG").style.display = "none";
+        document.getElementById("itemPG").style.display = "none";
+
+        document.getElementById("orderPG").style.display = "block";
+    });
+</script>
+</body>
+</html>
